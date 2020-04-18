@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
-        savedInstanceState?.let {
-            val tempData = savedInstanceState.getString("data_key")
+        savedInstanceState?.apply {
+            val tempData = getString("data_key")
 
             Log.d(tag, tempData)
         }
