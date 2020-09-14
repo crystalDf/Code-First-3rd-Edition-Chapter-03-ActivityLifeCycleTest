@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         savedInstanceState?.apply {
             val tempData = getString("data_key")
 
-            Log.d(tag, tempData)
+            Log.d(tag, tempData.toString())
         }
 
         startNormalActivity.setOnClickListener {
